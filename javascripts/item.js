@@ -58,7 +58,6 @@ define([
                         var data2 = item2[v];
                         var value1 = parseInt(data1[type]);
                         var value2 = parseInt(data2[type]);
-                        console.log(value1, value2)
                         if(value1 > value2){
                             return isAsc ? 1 : -1;
                         }
