@@ -13,7 +13,13 @@ requirejs([
     var router = new VueRouter({
         routes: [
             { path: '/index', component: {
-                template: indexTpl
+                template: indexTpl,
+                created: function () {
+                    $('.fancybox').fancybox({
+                        minWidth     : 649,
+                        minHeight    : 2457
+                    });
+                }
             } },
             { path: '/commit', component: {
                 template: commitTpl
